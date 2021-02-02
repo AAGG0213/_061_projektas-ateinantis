@@ -1,0 +1,1 @@
+console.log('Jau greit ateis');
