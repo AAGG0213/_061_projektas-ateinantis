@@ -1,0 +1,30 @@
+div {
+    display: inline-block;
+    width: 800px;
+    margin-left: calc(50% - 400px);
+    padding: 40px;
+    background-color: aliceblue;
+}
+
+
+@media (max-width: 900px) {
+    div {
+    width: 600px;
+    margin-left: calc(50% - 300px);
+    }
+}
+
+
+@media (max-width: 700px) {
+    div {
+    width: 400px;
+    margin-left: calc(50% - 200px);
+    }
+}
+
+@media (max-width: 450px) {
+    div {
+    width: 100%;
+    margin-left: 0;
+    }
+}
