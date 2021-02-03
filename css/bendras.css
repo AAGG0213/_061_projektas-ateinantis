@@ -55,3 +55,51 @@
 .hero peliukas {
     margin-bottom: 0;
 }
+
+.kairysis-stulpelis {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+.desinysis-stulpelis {
+    display: inline-block;
+    width: 40%;
+    float: right;
+}
+
+main h2 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+main p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #777777;
+}
+
+main p > a {
+    color: #e71e62;
+    text-decoration: none;
+}
+
+main p > a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+
+    .kairysis-stulpelis {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .desinysis-stulpelis {
+        width: 100%;
+       
+    }
+}
