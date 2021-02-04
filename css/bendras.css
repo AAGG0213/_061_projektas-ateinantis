@@ -127,6 +127,24 @@ footer .bottom-text > p {
     display: inline-block;
     padding: 0 10px;
     line-height: 30px;
+    position: relative;
+}
+
+footer .bottom-text > p::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background-color:#ffffff ;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translate(0, -50%);
+}
+
+footer .bottom-text > p:first-of-type:before {
+    display: none;
+    
 }
 
 footer .aprasas {
