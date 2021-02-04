@@ -110,6 +110,33 @@ main p > a:hover {
 }
 
 /* porastes dalis */
+footer.container {
+    padding-top: 0;
+}
+
+footer.container .social {
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 30px;
+}
+
+footer.container .social > a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 2px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30%;
+    transition: all 0.5s;
+}
+footer.container .social > a:hover {
+    background-color: #ffffff;
+    color: #02A6F1;
+}
 
 footer img {
     display: inline;
@@ -157,4 +184,15 @@ footer .aprasas {
 footer p > a {
     color: #ffffff;
     
+}
+
+@media (max-width: 700px) {
+    footer .bottom-text > p {
+        width: 100%;
+        
+    }
+    footer .bottom-text > p::before {
+        display: none;
+        
+    }    
 }
