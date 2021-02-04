@@ -1,10 +1,13 @@
+/* bendras stilius */
 .bg-blue {
-    background-color: lightblue;
+    background-color: #02A6F1;
 }
 
 .row-short {
     text-align: center;
 }
+
+/* hero dalis */
 
 .hero {
     min-height: 100vh;
@@ -68,6 +71,8 @@
     float: right;
 }
 
+/* main dalis */
+
 main h2 {
     display: inline-block;
     width: 100%;
@@ -102,4 +107,36 @@ main p > a:hover {
         width: 100%;
        
     }
+}
+
+/* porastes dalis */
+
+footer img {
+    display: inline;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+footer .bottom-text {
+    display: inline-block;
+    width: 100%;
+    color: #ffffff80;
+}
+
+footer .bottom-text > p {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 30px;
+}
+
+footer .aprasas {
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    color: #ffffff80;
+}
+
+footer p > a {
+    color: #ffffff;
+    
 }
