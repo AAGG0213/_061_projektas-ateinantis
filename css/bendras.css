@@ -1,10 +1,13 @@
+/* bendras stilius */
 .bg-blue {
-    background-color: lightblue;
+    background-color: #02A6F1;
 }
 
 .row-short {
     text-align: center;
 }
+
+/* hero dalis */
 
 .hero {
     min-height: 100vh;
@@ -68,6 +71,8 @@
     float: right;
 }
 
+/* main dalis */
+
 main h2 {
     display: inline-block;
     width: 100%;
@@ -102,4 +107,92 @@ main p > a:hover {
         width: 100%;
        
     }
+}
+
+/* porastes dalis */
+footer.container {
+    padding-top: 0;
+}
+
+footer.container .social {
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 30px;
+}
+
+footer.container .social > a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 2px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30%;
+    transition: all 0.5s;
+}
+footer.container .social > a:hover {
+    background-color: #ffffff;
+    color: #02A6F1;
+}
+
+footer img {
+    display: inline;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+footer .bottom-text {
+    display: inline-block;
+    width: 100%;
+    color: #ffffff80;
+}
+
+footer .bottom-text > p {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 30px;
+    position: relative;
+}
+
+footer .bottom-text > p::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background-color:#ffffff ;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translate(0, -50%);
+}
+
+footer .bottom-text > p:first-of-type:before {
+    display: none;
+    
+}
+
+footer .aprasas {
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    color: #ffffff80;
+}
+
+footer p > a {
+    color: #ffffff;
+    
+}
+
+@media (max-width: 700px) {
+    footer .bottom-text > p {
+        width: 100%;
+        
+    }
+    footer .bottom-text > p::before {
+        display: none;
+        
+    }    
 }
