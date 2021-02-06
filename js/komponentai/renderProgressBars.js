@@ -14,7 +14,9 @@ for(let i=0; i < data.length; i++) {
                     <div class="value">${elem.value}%</div>
                 </div>
                 <div class="bottom">
-                    <div class="progress" style="width: ${elem.value}%"></div>
+                    <div class="progress" style="width: ${elem.value}%">
+                        <div class="loading"></div>
+                    </div>
                 </div>
             </div>`;
 }
