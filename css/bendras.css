@@ -1,6 +1,6 @@
 /* bendras stilius */
-.bg-blue {
-    background-color: #02A6F1;
+.bg-main-color {
+    background-color: var(--main-color);
 }
 
 .row-short {
@@ -88,7 +88,7 @@ main p {
 }
 
 main p > a {
-    color: #e71e62;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
