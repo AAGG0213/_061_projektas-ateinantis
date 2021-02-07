@@ -5,11 +5,11 @@ const progressJuostosData = [
 },
 {
     label: 'Web design',
-    value: 86
+    value: 86.4
 },
 {
     label: 'Web development',
-    value: 50
+    value: 50.03496289
 },
 
 ];
