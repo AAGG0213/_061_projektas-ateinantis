@@ -13,6 +13,7 @@ import { progressJuostosData } from './duomenys/progressJuostosData.js';
 // pvz., renderSocials('footer > .social', socialsData);
 // tada reiketu papildomu validaciju selektoriui
 
-renderProgresJuosta('.kairysis-stulpelis', progressJuostosData);
 renderSocials('footer > .social', socialsData);
 
+renderProgresJuosta('.kairysis-stulpelis', progressJuostosData);
+// renderProgresJuosta('.kairysis-stulpelis', 50);
