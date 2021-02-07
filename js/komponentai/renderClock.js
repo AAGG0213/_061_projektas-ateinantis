@@ -6,7 +6,8 @@ if (typeof selector !== 'string' ||
         return false;
     }
     if (typeof deadline !== 'string' ||
-    deadline === '') {
+    deadline === '' ||
+    !isFinite((new Date('2000-' + deadline).getTime()))) {
         console.error('ERROR: netinkamo formato deadline parametras');
         return false;
     }
@@ -16,31 +17,22 @@ if (!DOM) {
     console.error('ERROR: pagal pateikta selektoriu elemento nera');
     return false;
 }
-let dataLaikas = {
-    days: 432,
-    hours: 9,
-    minutes: 37,
-    seconds: 39
-}
+let dataLaikas = updateclock(deadline);
 const zymes = ['days', 'hours', 'minutes', 'seconds'];
 let HTML = '';
 
 for (let i=0; i<4; i++) {
     const key = zymes[i];
     HTML += `<div class="time"> 
-            <div class="reiksme">${dataLaikas[key]} </div>
+            <div class="reiksme">${formatuotiSkaiciu(dataLaikas[key])} </div>
             <div class="zyme">${key}</div>
     </div>`;
 
 }
 
-
-
-
-//  post logic validacijos
-
 // rezultatas
 DOM.innerHTML = HTML;
+
 // neefektyvi paieska, nes ieskoma visame dokumente (HTML'e)
 // const allDOMvalues = document.querySelectorAll(`${selector} > .time > .reiksme`);
 // zymiai efektyvesnis budas ieskoti nuo artimiausios zinomos tinkamos vietos
@@ -52,7 +44,7 @@ console.log(allDOMvalues);
 setInterval(function () {
     dataLaikas = updateclock(deadline);
     for (let i=0; i<4; i++) {
-         allDOMvalues[i].innerText = dataLaikas[zymes[i]];
+         allDOMvalues[i].innerText = formatuotiSkaiciu(dataLaikas[zymes[i]]);
         const key = zymes[i];
         // HTML += `<div class="time"> 
         //         <div class="reiksme">${dataLaikas[key]} </div>
@@ -106,5 +98,8 @@ function updateclock(deadline) {
 // 
 // Date.prototype.getDay()
 
+function formatuotiSkaiciu(skaicius) {
+    return skaicius < 10 ? '0' + skaicius : skaicius;
+}
 
 export { laikrodukas }
