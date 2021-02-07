@@ -1,4 +1,6 @@
 // iskvieti funkcija
+import { laikrodukas } from './komponentai/renderClock.js';
+
 import { renderSocials } from './komponentai/renderSocials.js';
 // paimti duomenis
 import { socialsData } from './duomenys/socialsData.js';
@@ -13,6 +15,7 @@ import { progressJuostosData } from './duomenys/progressJuostosData.js';
 // pvz., renderSocials('footer > .social', socialsData);
 // tada reiketu papildomu validaciju selektoriui
 
+laikrodukas('.clock', '12-14 18:00:00');
 renderSocials('footer > .social', socialsData);
 
 renderProgresJuosta('.kairysis-stulpelis', progressJuostosData);
