@@ -42,18 +42,27 @@
 }
 
 .hero .clock {
-   
-    margin-bottom: 60px;
-    
 
+    margin-bottom: 60px;
 }
 
 .hero form {
    
     margin-bottom: 20px;
-    
+}
+
+.hero form input {
+   
+   background-color: transparent;
+    border-color: #777;
+    color: #777;
 
 }
+
+.hero form input::placeholder {
+     color: #777;
+    font-style: italic;
+ }
 
 .hero peliukas {
     margin-bottom: 0;
@@ -126,13 +135,18 @@ footer.container .social > a {
     width: 36px;
     height: 36px;
     margin: 2px;
-    font-size: 20px;
+    font-size: 0;
     line-height: 32px;
     color: #ffffff;
     text-decoration: none;
     border-radius: 30%;
     transition: all 0.5s;
 }
+
+footer.container .social > a::before {
+    font-size: 20px;
+}
+
 footer.container .social > a:hover {
     background-color: #ffffff;
     color: #02A6F1;
