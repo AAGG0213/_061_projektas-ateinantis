@@ -35,7 +35,7 @@ if (ilgis === 0) {
             continue;
         }
     
-        HTML += `<a href="${elem.href}" target="_blank" class="fa fa-${elem.icon}" ></a>`;
+        HTML += `<a href="${elem.href}" target="_blank" class="fa fa-${elem.icon}" >${elem.icon}</a>`;
     
         console.log(elem);
     }
