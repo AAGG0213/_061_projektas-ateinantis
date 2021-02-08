@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css">
 <!-- komponentai -->
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/buttons.css">
     <link rel="stylesheet" href="./css/clock.css">
     <link rel="stylesheet" href="./css/formos.css">
     <link rel="stylesheet" href="./css/peliukas.css">
@@ -55,8 +56,12 @@
                 <p>
                     Lorem ipsum dolor sit, amet consectetur <a href="mailto:musu.grupe@kazkas.kazkur">musu.grupe@kazkas.kazkur</a> adipisicing elit. Et, minus.
                 </p>
-                    <form>
-                        PRANESIMO FORMA
+                    <form class="forma">
+                        <input type="text" placeholder="Username" required>
+                        <input type="mail" placeholder="email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                        <button class="btn" type="submit">Send message</button>
                     </form>
             </div>
 
