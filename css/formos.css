@@ -24,7 +24,7 @@
     font-size: 18px;
     border: none;
     border-bottom: 2px #ccc solid;
-    
+    /* outline: none; */
 }
 .forma > textarea {
     grid-column: 1 / 3;

@@ -40,7 +40,7 @@
             <form class="forma single-column">
                 
                 <label for="sub-email">Type your email</label>
-                <input id="sub-email" type="email" placeholder="Type your email" required>
+                <input data-validation-rule="email" id="sub-email" type="email" placeholder="Type your email" required>
 
                 <button class="btn" type="submit">Subscribe now</button>
             </form>
@@ -64,13 +64,13 @@
                 </p>
                     <form class="forma">
                         <label for="name">Username</label>
-                        <input id="name" type="text" placeholder="Username" required>
+                        <input data-validation-rule="name" id="name" type="text" placeholder="Username" required>
                         
                         <label for="mes-email">Email</label>
-                        <input id="mes-email" type="email" placeholder="Email" required>
+                        <input data-validation-rule="email" id="mes-email" type="email" placeholder="Email" required>
 
                         <label for="message">Messages</label>
-                        <textarea id="message" placeholder="Messages" required></textarea>
+                        <textarea data-validation-rule="text" id="message" placeholder="Messages" required></textarea>
                         <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
                         <button class="btn" type="submit">Send message</button>
                     </form>
